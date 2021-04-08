@@ -6,11 +6,11 @@
 //
 
 class User {
-    let userName: String
+    let userLogin: String
     let userPassword: String
     
     init(userName: String, userPassword: String) {
-        self.userName = userName
+        self.userLogin = userName
         self.userPassword = userPassword
     }
     
