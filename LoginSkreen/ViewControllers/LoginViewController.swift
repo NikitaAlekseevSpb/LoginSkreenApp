@@ -12,8 +12,10 @@ class ViewController: UIViewController {
     @IBOutlet var nameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
-    private let userName = "user"
-    private let userPassword = "password"
+    let user1 = User.getUser()
+    
+//    private let userName =
+//    private let userPassword = "password"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +29,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func logIn() {
-        guard let name = nameField.text, name == userName else {
+        guard let name = nameField.text, name == user1.userName else {
             showAlert(
                 with: "Invalid login or password!",
                 and: "Please, enter correct login and password")
             return
         }
-        guard let password = passwordField.text, password == userPassword else {
+        guard let password = passwordField.text, password == user1.userPassword else {
             showAlert(
                 with: "Invalid login or password!",
                 and: "Please, enter correct login and password")
@@ -44,11 +46,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonForgotUserName() {
-        showAlert(with: "Oops!", and: "Your name is \(userName)😉")
+        showAlert(with: "Oops!", and: "Your name is \(user1.userName)😉")
     }
     
     @IBAction func buttonForgotPassword() {
-        showAlert(with: "Oops!", and: "Your password is \(userPassword)🙂")
+        showAlert(with: "Oops!", and: "Your password is \(user1.userPassword)🙂")
     }
     
     @IBAction func unwind( for segue: UIStoryboardSegue){
