@@ -15,28 +15,24 @@ class GeneralInformationViewController: UIViewController {
     @IBOutlet var gender: UILabel!
     @IBOutlet var age: UILabel!
     
-    var nameValue: String!
-    var surnameMediator: String!
-    var midleNameMediator: String!
-    var genderMediator:String!
-    var ageMediator: String!
+    var user: User!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        name.text = nameValue
-        surname.text = surnameMediator
-        midleName.text = midleNameMediator
-        gender.text = genderMediator
-        age.text = ageMediator
+        name.text = user.person.name
+        surname.text = user.person.surname
+        midleName.text = user.person.midleName
+        gender.text = user.person.gender
+        age.text = user.person.age
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let aboutMe = segue.destination as? AboutMeViewController else {return}
-
-        aboutMe.aboutMeValue = Person.getNameOfUser()
+        aboutMe.user = user
+        
     }
     
 

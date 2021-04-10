@@ -16,7 +16,6 @@
 		FA8BF94F2618E8B30092138D /* WelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BF94E2618E8B30092138D /* WelcomViewController.swift */; };
 		FABDFABB2620DCFE002191F2 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDFABA2620DCFE002191F2 /* AboutMeViewController.swift */; };
 		FAC0A5B2261F5A7500E0DE41 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0A5B1261F5A7500E0DE41 /* User.swift */; };
-		FAC0A5B7261F625E00E0DE41 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0A5B6261F625E00E0DE41 /* Person.swift */; };
 		FAC0A5BE261FA97B00E0DE41 /* GeneralInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0A5BD261FA97B00E0DE41 /* GeneralInformationViewController.swift */; };
 		FAC0A5C1261FB78300E0DE41 /* ThreeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0A5C0261FB78300E0DE41 /* ThreeScreenViewController.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		FA8BF94E2618E8B30092138D /* WelcomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomViewController.swift; sourceTree = "<group>"; };
 		FABDFABA2620DCFE002191F2 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		FAC0A5B1261F5A7500E0DE41 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FAC0A5B6261F625E00E0DE41 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FAC0A5BD261FA97B00E0DE41 /* GeneralInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInformationViewController.swift; sourceTree = "<group>"; };
 		FAC0A5C0261FB78300E0DE41 /* ThreeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,10 +78,10 @@
 		FAC0A5AA261F58B000E0DE41 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA8BF94E2618E8B30092138D /* WelcomViewController.swift */,
 				FA8BF93C2618785B0092138D /* LoginViewController.swift */,
-				FABDFABA2620DCFE002191F2 /* AboutMeViewController.swift */,
+				FA8BF94E2618E8B30092138D /* WelcomViewController.swift */,
 				FAC0A5BD261FA97B00E0DE41 /* GeneralInformationViewController.swift */,
+				FABDFABA2620DCFE002191F2 /* AboutMeViewController.swift */,
 				FAC0A5C0261FB78300E0DE41 /* ThreeScreenViewController.swift */,
 			);
 			path = ViewControllers;
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				FAC0A5B1261F5A7500E0DE41 /* User.swift */,
-				FAC0A5B6261F625E00E0DE41 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,7 +192,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC0A5B7261F625E00E0DE41 /* Person.swift in Sources */,
 				FAC0A5C1261FB78300E0DE41 /* ThreeScreenViewController.swift in Sources */,
 				FA8BF93D2618785B0092138D /* LoginViewController.swift in Sources */,
 				FA8BF9392618785B0092138D /* AppDelegate.swift in Sources */,

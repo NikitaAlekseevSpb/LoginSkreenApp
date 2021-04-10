@@ -10,12 +10,12 @@ import UIKit
 class ThreeScreenViewController: UIViewController {
 
     @IBOutlet var photoPerson: UIImageView!
-    var photoValue: UIImage!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photoPerson.image = photoValue
+        photoPerson.image = UIImage(named: user.person.photo)
         
     }
     

@@ -10,11 +10,11 @@ import UIKit
 class AboutMeViewController: UIViewController {
 
     @IBOutlet var aboutMe: UILabel!
-    var aboutMeValue: Person!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        aboutMe.text = aboutMeValue.aboutMe
+        aboutMe.text = user.person.aboutMe
         
     }
     

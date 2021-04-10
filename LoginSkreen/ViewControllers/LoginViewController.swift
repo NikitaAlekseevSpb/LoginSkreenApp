@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var nameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
-    let person = Person.getNameOfUser()
+    var user = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +23,14 @@ class ViewController: UIViewController {
 
         for view in tabBarController.viewControllers! {
             if let welcomVC = view as? WelcomViewController {
-               welcomVC.valueWelcomLabel = "\(person.name) \(person.surname) "
-            
+                welcomVC.user = user
             } else if let navigationVC = view as? UINavigationController{
                 let generalInfVC = navigationVC.topViewController as! GeneralInformationViewController
-                generalInfVC.nameValue = person.name
-                generalInfVC.surnameMediator = person.surname
-                generalInfVC.midleNameMediator = person.midleName
-                generalInfVC.ageMediator = person.age
-                generalInfVC.genderMediator = person.gender
+                generalInfVC.user = user
             
             } else {
-                let threeScreenVC = view as? ThreeScreenViewController
-                threeScreenVC?.photoValue = UIImage(named: person.photo)
+                let threeScreenVC = view as! ThreeScreenViewController
+                threeScreenVC.user = user
             }
         }
     }
@@ -43,13 +38,13 @@ class ViewController: UIViewController {
    
 
     @IBAction func logIn() {
-        guard let name = nameField.text, name == person.userPerson.userLogin else {
+        guard let name = nameField.text, name == user.userLogin else {
             showAlert(
                 with: "Invalid login or password!",
                 and: "Please, enter correct login and password")
             return
         }
-        guard let password = passwordField.text, password == person.userPerson.userPassword else {
+        guard let password = passwordField.text, password == user.userPassword else {
             showAlert(
                 with: "Invalid login or password!",
                 and: "Please, enter correct login and password")
@@ -60,11 +55,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonForgotUserName() {
-        showAlert(with: "Oops!", and: "Your name is \(person.userPerson.userLogin)😉")
+        showAlert(with: "Oops!", and: "Your name is \(user.userLogin)😉")
     }
     
     @IBAction func buttonForgotPassword() {
-        showAlert(with: "Oops!", and: "Your password is \(person.userPerson.userPassword)🙂")
+        showAlert(with: "Oops!", and: "Your password is \(user.userPassword)🙂")
     }
     
     @IBAction func unwind( for segue: UIStoryboardSegue){
