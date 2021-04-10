@@ -28,6 +28,10 @@ class ViewController: UIViewController {
             } else if let navigationVC = view as? UINavigationController{
                 let generalInfVC = navigationVC.topViewController as! GeneralInformationViewController
                 generalInfVC.nameValue = person.name
+                generalInfVC.surnameMediator = person.surname
+                generalInfVC.midleNameMediator = person.midleName
+                generalInfVC.ageMediator = person.age
+                generalInfVC.genderMediator = person.gender
             
             } else {
                 let threeScreenVC = view as? ThreeScreenViewController

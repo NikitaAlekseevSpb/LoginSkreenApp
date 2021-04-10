@@ -72,7 +72,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <color key="backgroundColor" red="0.8821151618108225" green="1" blue="0.92101014838923412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="1wL-iu-ZVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0hq-8I-zk3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1wL-iu-ZVq" secondAttribute="trailing" constant="40" id="BP9-qA-YP9"/>
@@ -134,7 +134,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MC3-1b-bmm"/>
-                        <color key="backgroundColor" red="0.74782443046569824" green="0.75290840864181519" blue="0.93987429141998291" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.65827369689941406" green="0.94029015302658081" blue="0.90483444929122925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="agf-9a-Vj2" firstAttribute="centerX" secondItem="6uZ-4Z-mSD" secondAttribute="centerX" id="6mN-aC-5W6"/>
                             <constraint firstItem="ht1-3P-I7I" firstAttribute="centerX" secondItem="6uZ-4Z-mSD" secondAttribute="centerX" id="D6Z-ND-o5Z"/>
@@ -240,7 +240,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hET-yi-bHI"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" red="0.76480421269999999" green="0.83605346199999997" blue="0.9326171875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="hET-yi-bHI" firstAttribute="trailing" secondItem="Pae-IZ-BNH" secondAttribute="trailing" constant="16" id="IJ9-Q6-7bK"/>
                             <constraint firstItem="Pae-IZ-BNH" firstAttribute="top" secondItem="hET-yi-bHI" secondAttribute="top" constant="40" id="N8b-jh-iNv"/>
@@ -290,7 +290,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PyF-EP-wcC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.76480421268376564" green="0.83605346195263031" blue="0.9326171875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="c3O-UO-8eR" firstAttribute="leading" secondItem="PyF-EP-wcC" secondAttribute="leading" constant="16" id="Fjm-OK-2X1"/>
                             <constraint firstItem="PyF-EP-wcC" firstAttribute="trailing" secondItem="c3O-UO-8eR" secondAttribute="trailing" constant="16" id="HJA-wz-WBD"/>
@@ -394,12 +394,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

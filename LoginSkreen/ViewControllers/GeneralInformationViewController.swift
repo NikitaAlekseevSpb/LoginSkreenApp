@@ -16,12 +16,21 @@ class GeneralInformationViewController: UIViewController {
     @IBOutlet var age: UILabel!
     
     var nameValue: String!
+    var surnameMediator: String!
+    var midleNameMediator: String!
+    var genderMediator:String!
+    var ageMediator: String!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        name.text = nameValue ?? ""
+        name.text = nameValue
+        surname.text = surnameMediator
+        midleName.text = midleNameMediator
+        gender.text = genderMediator
+        age.text = ageMediator
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
