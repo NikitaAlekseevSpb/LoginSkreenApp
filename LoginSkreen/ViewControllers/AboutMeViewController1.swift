@@ -1,5 +1,5 @@
 //
-//  TwoScreenViewController.swift
+//  AboutMeViewController.swift
 //  LoginSkreen
 //
 //  Created by MacBook on 09.04.2021.
@@ -7,16 +7,12 @@
 
 import UIKit
 
-class TwoScreenViewController: UIViewController {
+class AboutMeViewController1: UIViewController {
 
-    @IBOutlet var label: UILabel!
-    var valueLable: String!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        label.text = valueLable ?? ""
-        
+        // Do any additional setup after loading the view.
     }
     
 

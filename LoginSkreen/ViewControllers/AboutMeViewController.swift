@@ -1,5 +1,5 @@
 //
-//  ThreeScreenViewController.swift
+//  AbViewController.swift
 //  LoginSkreen
 //
 //  Created by MacBook on 09.04.2021.
@@ -7,15 +7,14 @@
 
 import UIKit
 
-class ThreeScreenViewController: UIViewController {
+class AboutMeViewController: UIViewController {
 
-    @IBOutlet var photoPerson: UIImageView!
-    var photoValue: UIImage!
+    @IBOutlet var aboutMe: UILabel!
+    var aboutMeValue: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        photoPerson.image = photoValue
+        aboutMe.text = aboutMeValue.aboutMe
         
     }
     

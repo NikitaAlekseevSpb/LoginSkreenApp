@@ -15,6 +15,6 @@ class User {
     }
     
     static func getUser() -> User {
-        User(userName: "name", userPassword: "1")
+        User(userName: "1", userPassword: "1")
     }
 }

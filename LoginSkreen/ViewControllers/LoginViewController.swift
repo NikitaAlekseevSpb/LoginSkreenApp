@@ -19,27 +19,24 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as? UITabBarController else { return }
+         let tabBarController = segue.destination as! UITabBarController
 
         for view in tabBarController.viewControllers! {
             if let welcomVC = view as? WelcomViewController {
-                welcomVC.valueWelcomLabel = "\(person.name) \(person.firstName) "
+               welcomVC.valueWelcomLabel = "\(person.name) \(person.surname) "
+            
             } else if let navigationVC = view as? UINavigationController{
-                let twoScreenVC = navigationVC.topViewController as! TwoScreenViewController
-                twoScreenVC.valueLable = person.firstName
+                let generalInfVC = navigationVC.topViewController as! GeneralInformationViewController
+                generalInfVC.nameValue = person.name
+            
             } else {
                 let threeScreenVC = view as? ThreeScreenViewController
-                threeScreenVC?.labelThreeValue = person.name
+                threeScreenVC?.photoValue = UIImage(named: person.photo)
             }
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let welcomVC = segue.destination as? WelcomViewController else {
-//            return
-//        }
-//        welcomVC.valueWelcomLabel = nameField.text
-//    }
+   
 
     @IBAction func logIn() {
         guard let name = nameField.text, name == person.userPerson.userLogin else {
